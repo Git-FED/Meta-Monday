@@ -1,0 +1,35 @@
+{
+  "project": "MuseAi-Black-Monday",
+  "dates": {
+    "black_friday": "2026-11-27",
+    "cyber_monday": "2026-11-30"
+  },
+  "workers": {
+    "maximum": 100,
+    "default_broad_search": 50,
+    "default_item_search": 50,
+    "item_search_item_workers": 25,
+    "item_search_category_workers": 25,
+    "dispatch_requires_explicit_order": true
+  },
+  "deal_policy": {
+    "minimum_discount_percent": 15,
+    "require_live_url": true,
+    "require_in_stock": true,
+    "require_price_evidence": true,
+    "require_timestamp_utc": true,
+    "require_human_review_before_purchase": true
+  },
+  "stripe": {
+    "enabled": false,
+    "account_model": "muse_owned_separate_account",
+    "currency": "USD",
+    "max_total_funding_cents": 0,
+    "max_single_bid_cents": 0,
+    "purchase_requires_human_approval": true
+  },
+  "output": {
+    "results_file": "results/deals_found.md",
+    "timestamp_format": "ISO-8601 UTC"
+  }
+}
